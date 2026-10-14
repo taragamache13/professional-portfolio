@@ -1,0 +1,68 @@
+
+:root {
+  /* Background colors */
+  --bg-primary: #0b0a1a;
+  --bg-secondary: #151128;
+  --bg-card: #211936;
+
+  /* Brand colors */
+  --purple: #7657f4;
+  --blue: #348af7;
+  --teal: #23d4c5;
+
+  /* Text colors */
+  --text-primary: #f8f7ff;
+  --text-secondary: #b7adcb;
+
+  /* Borders and effects */
+  --border-color: #42335f;
+  --glow-purple: rgba(118, 87, 244, 0.3);
+  --glow-teal: rgba(35, 212, 197, 0.2);
+
+  /* Layout */
+  --max-width: 1200px;
+  --border-radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: Inter, Arial, sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--purple);
+  color: white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
